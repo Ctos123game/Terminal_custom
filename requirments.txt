@@ -1,0 +1,54 @@
+<!--Activation Key-->
+irm https://massgrave.dev/get | iex
+
+
+<!--Kali Linux Subsystem-->
+#sudo apt install zsh
+#sudo apt install git
+#sudo apt install figlet
+#sudo apt install toilet
+#sudo apt install
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ZSH=path/to/new/ohmyzsh/folder sh install.sh
+zsh ./install.sh
+#nano ~/.zshrc
+nano ~/.p10k.zsh
+$POWERLEVEL9K_INSTANT_PROMPT = quiet
+ZSH_THEME="powerlevel10k/powerlevel10k"
+mv figlet-fonts/* figlet && rm -rf figlet-fonts
+
+
+<!--subsystem-->
+#Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+#Add-AppxPackage <path.to>/Microsoft.WSL_1.0.0.0_x64_ARM64.msixbundle
+#wsl ~
+
+<!--Powershell-->
+#New-Item -Path $PROFILE -Type File -Force
+#notepad $PROFILE
+#code $PROFILE //have a vscode
+#. PROFILE
+#change utf-8 to utf-8 with BOM 
+
+<!--installation-->
+#winget install JanDeDobbeleer.OhMyPosh
+#winget install starship
+#Set-ExecutionPolicy RemoteSigned
+#New-Item -ItemType Directory -Force ~/.config;New-Item -ItemType file ~/.config/starship.toml;
+
+<!--problem with psgallery-->
+When you try to install PSReadLine if you encounter an error you may need to delete the plugin and then re-install it.  You can browse these files from this folder location: C:\Program Files\WindowsPowerShell\Modules\PSReadline
+then rerun the script
+
+<!--cannot run script-->
+Set-ExecutionPolicy RemoteSigned -Scope LocalMachine
+Set-ExecutionPolicy Unrestricted
+
+<!-- debloat-->
+iwr -useb https://christitus.com/win | iex
+
+<!--venv installation-->
+python -m venv
+#b:/python/venv/Scripts/python.exe -m pip install -U pip install <package>
+
+
